@@ -1,0 +1,55 @@
+#homeScreen {
+    height:100vh;
+    width:100%;
+    position:relative;
+    z-index:-1;
+    .nameTitle {
+        position:absolute;
+        top:20%;
+        transform: translateY(-20%);
+        text-align:center;
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+            color:white;
+            font-size:4em;
+        }
+        .anaTitle {
+            font-weight:800;
+        }
+    }
+
+    .servicesTitle {
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align:center;
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight:400;
+            color:white;
+            font-size:2.5em;
+        }
+    }
+
+    .learnMore {
+        position: absolute;
+        bottom:25px;
+        text-align:center;
+        span {
+            font-family: 'Raleway', sans-serif;
+            display:block;
+            color:white;
+            cursor:pointer;
+        }
+        .learnMoreCopy {
+            font-size:1.5em;
+            font-weight:400;
+            margin-bottom:10px;
+        }
+        .learnMoreArrow {
+            width:25px;
+            margin:auto;
+        }
+    }
+}
