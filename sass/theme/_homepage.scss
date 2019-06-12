@@ -6,13 +6,16 @@
     .nameTitle {
         position:absolute;
         top:20%;
-        transform: translateY(-20%);
+        transform: translateY(-80%);
         text-align:center;
         h2 {
             font-family: 'Raleway', sans-serif;
             font-weight: 100;
             color:white;
             font-size:4em;
+            @media only screen and (max-width: 991px) {
+                font-size:3em;
+            }
         }
         .anaTitle {
             font-weight:800;
@@ -29,6 +32,9 @@
             font-weight:400;
             color:white;
             font-size:2.5em;
+            @media only screen and (max-width: 991px) {
+                font-size:1.7em;
+            }
         }
     }
 
@@ -46,10 +52,89 @@
             font-size:1.5em;
             font-weight:400;
             margin-bottom:10px;
+            @media only screen and (max-width: 991px) {
+                font-size:1.3em;
+            }
         }
         .learnMoreArrow {
             width:25px;
             margin:auto;
         }
+    }
+}
+
+#servicesScreen {
+    padding-top:80px;
+    padding-bottom:80px;
+    span img {
+        max-width:30px;
+        margin-bottom:10px;
+    }
+    .servicesTitle {
+        margin-bottom:80px;
+        h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size:2.5em;
+            font-weight:300;
+        }
+    }
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size:2em;
+        font-weight:300;
+        margin-bottom:30px;
+    }
+
+    p {
+        font-family: 'Raleway', sans-serif;
+        font-size:0.9em;
+    }
+
+    button {
+        font-family: 'Raleway', sans-serif;
+        font-size:1.2em;
+        color:white;
+        background-color:#C14848;
+        border:0;
+        border-radius:55px;
+        outline:0;
+        box-shadow: 0;
+        padding:6px 35px 6px 35px;
+
+        @media only screen and (max-width: 991px) {
+            margin-bottom: 100px;
+        }
+    }
+    background-color:white;
+}
+
+#contactScreen {
+    padding:80px 0px 80px 0px;
+
+    .contactTitle {
+        margin-bottom:80px;
+        h3 {
+            color:white;
+            font-family: 'Raleway', sans-serif;
+            font-size:2.5em;
+            font-weight:300;
+        }
+    }
+
+    form {
+        min-width:350px;
+    }
+    span {
+        color:white;
+        font-size:1em;
+    }
+    input {
+        width:100%;
+        font-size:1.2em;
+    }
+    textarea {
+        width:100%;
+        font-size:1em;
     }
 }
